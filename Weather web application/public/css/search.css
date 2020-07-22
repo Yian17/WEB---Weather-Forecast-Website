@@ -1,0 +1,138 @@
+#searchPage{
+  	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url("../img/search/earth.png");
+	min-height: 100%;
+	overflow: hidden;
+}
+
+#searchBody{
+	position: absolute;
+	left:20%;
+	width: 60%;
+	top: 60%;
+	height: 8%;
+}
+
+#userView{
+	position: absolute;
+	left:20%;
+	width: 60%;
+	top: 70%;
+	color:#fafafa;
+}
+
+#cityTags{
+	position: absolute;
+	top:100%;
+}
+
+#searchPage h1{
+	color: #e0ffff;
+	text-shadow: 0 0 5px rgba(255,255,255,1), 0 0 20px #1d7bca, 0 0 30px #1d7bca, 0 0 40px grey, 0 0 50px #1d7bca, 0 0 60px rgba(255,255,255,1);	
+	text-align: center;
+	font-size: 10vmin;
+	z-index: 0;
+	padding-bottom: 8%;
+	position: absolute;
+	width:100%;
+	top: 30%;
+}
+
+#searchTextField{
+	position: relative;
+	width: 77%;
+	float: left;
+	z-index: 0;
+	text-align: center;
+	font-weight: bold;
+	height:90%;
+	font-size: 3vmin;
+	padding: 0;
+	margin: 0;
+    border:0px s20id #dbdbdb;
+}
+
+#searchButtonBg{
+    opacity: 0.98;
+    position: absolute;
+    right: 0%;
+    z-index: 1;
+    width:23%;
+    height: 100%;
+}
+
+#searchButton{
+	height: 95%;
+	position:absolute;
+	text-align: center;
+	z-index: 0;
+	width: 100%;
+	font-size: 3vmin;  
+    background-color:#8fcbfc;
+    color:#fafafa;
+    display: inline-block;
+}
+
+#searchButton:hover  {
+    color:black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+	#searchButton, #searchTextField{
+		font-size: 2vmin;
+	}
+}
+
+@media screen and (max-width: 501px){
+	#searchPage h1{
+		font-size: 8vmin;
+		top: 45%;
+	}
+}
+
+@media screen and (max-height: 701px){
+	#searchPage h1{
+		font-size: 8vmin;
+		top: 30%;
+	}
+
+	#searchBody{
+		top: 50%;
+	}
+
+	#userView{
+		top:60%;
+	}
+}
+
+@media screen and (max-height: 300px){
+	#searchPage h1{
+		font-size: 8vmin;
+		top: 30%;
+	}
+
+	#searchBody{
+		top: 55%;
+	}
+
+	#userView{
+		top:65%;
+	}
+}
+
+@media screen and (max-width: 200px){
+	#searchPage h1{
+		font-size: 8vmin;
+		top: 60%;
+	}
+
+	#userView{
+		top:65%;
+	}
+}
+

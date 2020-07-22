@@ -1,0 +1,30 @@
+.tagDiv{
+	position: relative;
+	background: #8fcbfc;
+	border-radius: 12px;
+	color:#fafafa;
+	float: left;
+	margin-right: 3%;
+	margin-top: 3%;
+	padding: 0.8%;
+	font-size: 2vmin;
+}
+
+.idClose, .cityTag{
+	position: relative;
+	padding-right:5px;
+}
+
+.idClose{
+	padding-right:10px;
+	color: black;
+}
+
+.cityTag:hover{
+	cursor: pointer;
+}
+
+.idClose:hover{
+	cursor: pointer;
+	color: #fafafa;
+}

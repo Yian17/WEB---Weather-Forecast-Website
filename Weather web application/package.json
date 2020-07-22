@@ -1,0 +1,48 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "provide weather of cities and clothing suggestion",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "react": "sh ./public/script/bash_cmd/convert.sh ./public/script/jsx ./public/script/js_client .",
+    "init_lint": "./node_modules/.bin/eslint --init",
+    "lint": "sh ./public/script/bash_cmd/check_style.sh",
+    "fix": "sh ./public/script/bash_cmd/fix_style.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FallCSC309/assignment-3-bang.git"
+  },
+  "author": "bang_members",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FallCSC309/assignment-3-bang/issues"
+  },
+  "homepage": "https://github.com/FallCSC309/assignment-3-bang#readme",
+  "dependencies": {
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "method-override": "latest",
+    "morgan": "latest",
+    "request": "latest",
+    "express-session": "latest",
+    "js": "latest"
+  },
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-preset-react": "latest",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha": "^4.0.1",
+    "webpack": "^3.8.1",
+    "mongo": "latest"
+  }
+}

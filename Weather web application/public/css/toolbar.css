@@ -1,0 +1,111 @@
+html,body{
+	position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+#main, #searchResult{
+	height: 100%;
+	width: 100%;
+    margin: 0;
+}
+
+hr{
+	margin: 0;
+	border: 0 none;
+	color: black;
+	background-color: black;
+	height: 3px;
+	width: 100%;
+}
+
+#myTopnav {
+    width: 100%;
+    left: 0%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+    min-height: 8%;
+}
+
+#topnavContent{
+	position: relative;
+	float: left;
+	width:75%;
+}
+
+#userLogEntry{
+	width:28%;
+	right: 3%;
+	overflow: hidden;
+    display: block;
+    position: fixed;
+    z-index: 10001;
+    top: 1%;
+    min-height: 8%;
+    color: #f2f2f2;
+}
+
+#userLogEntry a{
+	color: #f2f2f2;
+}
+
+#topnavBg{
+	content: "";
+	width: 100%;
+	overflow: hidden;
+    display: block;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    background-color: transparent;
+    min-height: 10%;
+}
+
+#myTopnav a {
+	display:inline-block;
+    width:20%;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 1%;
+	text-decoration: none;
+	font-size: 3vmin;
+	cursor: pointer;
+}
+
+#myTopnav a:hover {
+	cursor: pointer;
+	background-color: transparent;
+	color: #f2f2f2;
+	font-size: 4vmin;
+	font-weight: bold;
+}
+
+#myTopnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#myTopnav span{
+	position: relative;
+	width: 40%;
+	float: left;
+	font-size: 3vmin;
+	cursor: pointer;
+	padding-top: 1%;
+	color: #f2f2f2;
+	padding-left: 10%;
+	background-color: transparent;
+}
+
+#myTopnav span:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}

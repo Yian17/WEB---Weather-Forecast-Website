@@ -1,0 +1,384 @@
+#Register {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 6%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 90%; 
+    overflow: fixed; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+#RegisterContent{
+    background-size: cover;
+    background-image: url("../img/backgroud/clo_back.jpg");
+    position: relative;
+    background-color: #fefefe;
+    overflow:hidden;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+#RegisterHeader .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+#RegisterHeader .close:hover,.close:focus {
+    color: #9dcaee;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#RegisterHeader {
+    position: relative;
+    top: 0;
+    height: 25%;
+    width: 100%;
+    background-image: url("../img/clothing/bluesky.gif");
+    text-align: center;
+}
+
+#RegisterHeader h2{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    color: #e0ffff;
+    text-shadow: 0 0 5px rgba(255,255,255,1);       
+    font-size: 6vh;
+}
+
+#RegisterBody {
+    position: absolute;
+    width:100%;
+    height:65%;
+    padding: 2px 16px;
+    overflow: scroll;
+}
+
+#RegInputContent {
+/*     padding-top: 10%; */
+/*     margin-top:100px; */
+/*     top:20%; */
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.register-form {
+    position: absolute;
+    margin-top: -70px;
+    margin-left:300px;
+    top: 24%;
+    width: 100%;
+    /*margin: 0 auto;*/
+    text-align: left;
+    /*margin-left: 200px;*/
+    font-weight: bold;
+}
+
+#err_jump_message {
+    position: relative;
+    padding-top: -300px;
+    margin-right: 200px;
+    color: red;
+}
+
+#seconds {
+    padding-left: 10px;
+    color:red;
+}
+
+#show_mes {
+    margin-left: -190px;
+    padding-left: -600px;
+}
+
+#show_mes p {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    color: red;
+
+}
+
+/*username, possward, etc*/
+.register-form h4 {
+    position: relative;
+    margin-left: -140px;
+    line-height: 0.8em;
+}
+/*<input>*/
+.form-content {
+
+    margin-top: -26px;
+    position: relative;
+    font-size: 2vh;
+    border-radius: 8px;
+    width: 120px;
+    height: 18px;
+}
+
+#email {
+    margin-left: 98px;
+}
+#user-name, #password {
+    margin-left: 60px;
+}
+
+#create-account {
+    position:relative;
+    margin-top:20px;
+    margin-left:-140px;
+    background-color: #9ec9ed;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#create-account:hover {
+    box-shadow: 1px 1px 2px grey, 0 0 5px rgba(255,255,255,1), 0 4px 4px 0 #badefc;
+}
+
+#gender {
+    position: absolute;
+    margin-top:-10px;
+    margin-left:-140px;
+}
+
+
+#checkName {
+    position:absolute;
+    color:red;
+}
+
+#checkPass {
+    position:absolute;
+    color:red;
+}
+
+#checkEmail {
+    position:absolute;
+    color:red;
+}
+#checkConfirm {
+    position:absolute;
+    color:red;
+}
+#checkGender {
+    position:absolute;
+    color:red;
+}
+
+#create-account:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.olduser{
+    margin-left: -142px;
+}
+
+/*#RegisterBody h4{
+    padding: 5px 20px;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255,255,255,1);
+}*/
+
+
+@media (max-width: 800px) {
+    #RegisterBody {
+        position: relative;
+        text-align:center;
+        margin:auto;
+        width:100%;
+        height:65%;
+        padding: 2px 16px;
+        overflow: scroll;
+    }
+    #RegisterContent{
+        margin:0 auto;
+        text-align:center;
+        background-size: cover;
+        background-image: url("../img/backgroud/clo_back.jpg");
+        position: relative;
+        background-color: #fefefe;
+        overflow:hidden;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        height: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+   .register-form {
+        position: relative;
+        margin-top: -70px;
+        margin-left:220px;
+        top: 24%;
+        width: 100%;
+        right:10%;
+        /*margin: 0 auto;*/
+        text-align: left;
+        /*margin-left: 200px;*/
+        font-weight: bold;
+    }
+    .register-form h4 {
+        margin-left: -60px;
+        line-height: 1.0em;
+    }
+    .form-content {
+
+        margin-top: -26px;
+        position: relative;
+        font-size: 2vh;
+        border-radius: 8px;
+        width: 100px;
+        height: 14px;
+    }
+
+    #gender {
+        position: absolute;
+        margin-top:-10px;
+        margin-left:-60px;
+    }
+    #create-account {
+/*         margin-right: 150px; */
+        position:relative;
+        margin-left:-60px;
+        background-color: #9ec9ed;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        /*margin: 4px 2px;*/
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    .register-form h4 {
+        font-size: 12px;
+    }
+    .register-form p{
+        font-size: 12px;
+        line-height: 1.0em;
+    }
+    #email {
+        margin-left: 80px;
+    }
+    #user-name, #password {
+        margin-left: 50px;
+    }
+    .olduser{
+        margin-left: -60px;
+    }
+    .register-form span{
+        margin-top: -17px;
+        margin-left: -105px;
+    }
+    #show_mes {
+        margin-left: -100px;
+        padding-left: -600px;
+    }
+    #err_jump_message {
+        position: relative;
+/*         padding-top: -300px;
+        margin-left: 150px; */
+        color: red;
+
+    }
+    #seconds {
+        font-size: 12px;
+        padding-left: -80px;
+        color:red;
+    }
+
+
+
+}
+
+@media (max-width: 1000px){
+    #RegisterContent{
+        background-size: cover;
+        background-image: url("../img/backgroud/clo_back.jpg");
+        position: relative;
+        background-color: #fefefe;
+        overflow:hidden;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        height: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    #RegisterHeader h2{
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        color: #e0ffff;
+        text-shadow: 0 0 5px rgba(255,255,255,1);       
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 550px){
+    #RegisterBody {
+    position: absolute;
+    right:10%;
+    width:100%;
+    height:65%;
+    padding: 2px 16px;
+    overflow: scroll;
+    }
+}
+
+@media (max-width: 450px){
+    #RegisterBody {
+    position: absolute;
+    right:20%;
+    width:100%;
+    height:65%;
+    padding: 2px 16px;
+    overflow: scroll;
+    }
+}
+
+@media (max-width: 420px){
+    #RegisterBody {
+/*     background-color:blue; */
+    -webkit-transform:scale(0.8,0.8);
+    -moz-transform:scale(0.8,0.8);
+    top:90px;
+    position: absolute;
+    right:0%;
+    width:130%;
+    height:65%;
+    padding: 2px 16px;
+    overflow: scroll;
+    }
+}

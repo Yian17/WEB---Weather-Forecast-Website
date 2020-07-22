@@ -1,0 +1,230 @@
+#clothing {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    left: 0;
+    top: 0;
+    width: 103%; 
+    height: 100%; 
+    overflow:scroll;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#clothingContent{
+    position: relative;
+    background-image: url("../img/backgroud/clo_back.jpg");
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    height: 65%;
+    top:5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+#close {
+    position: relative;
+    margin-top: 2%;
+    margin-left:45%;
+    color: #e0ffff;
+    font-size: 6vmin;
+    font-weight: 100;
+  
+}
+
+#close:hover,#close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#clothing img{
+    height: 8vh;
+    width: 8vh;    
+}
+
+#clothingHeader {
+    position: relative;
+    top: 0;
+    padding-top: 0%;
+    width: 100%;
+    background-image: url("../img/clothing/bluesky.gif");
+    text-align: center;
+    display: inline-flex;
+}
+
+#clothingHeader h2{
+    position: relative;
+    width: 100%;
+    transform: translateX(50%);
+    margin: 0;
+    padding-top: 2%;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:200;
+    color: #e0ffff;
+    text-shadow: 0 0 5px rgba(255,255,255,1);
+    font-size: 4vh;
+}
+
+#clothingBody {
+    padding: 0;
+}
+
+#clothingMen{
+    position: relative;
+    top: 25%;
+    height: 20%;
+    font-size: 2vh;
+    width:80%;
+}
+
+#clothingWomen{
+    position: relative;
+    top: 25%;
+    height: 20%;
+    font-size: 2vh;
+    width:80%;
+}
+
+#clothingOther{
+    position: relative;
+    left: 5%;
+    top: 75%;
+    height: 20%;
+    font-size: 2vh;
+}
+
+.temp_high, .temp_low {
+    padding-top: 2%;
+    display: relative;
+    width: 50%;
+    float: left;
+}
+
+.clothing_subtitle {
+    padding-bottom: 7px;
+    font: bold 1.5em Georgia, sans-serif;
+}
+
+.tabDiv ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tabDiv ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: rgba(51, 82, 107, 0.43);
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer; 
+}
+
+#clothingBody li.active {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255,255,255,1);
+    background: rgba(115, 166, 208, 0.73);
+}
+
+#clothingBody .cloth-panel {
+    display: none;
+    background-color: rgba(192,192,192,0.1);
+    padding-top: 3%;
+    padding-left: 10%;
+    border-radius: 0 0 10px 10px;
+    width: 80%;
+    height: 100%;
+}
+
+#clothingBody .cloth-panel.active {
+    display: block;
+}
+
+.panelDive {
+    display: inline-flex;
+    width: 80%;
+    height: 80%;
+}
+
+@media (max-width:999px) {
+    #clothingContent {
+        width: 80%;
+        height:50%;
+    }
+    #Clothing{
+        width: 100%; 
+        height: 90%; 
+    }
+
+    #clothingHeader h2{
+        font-size: 4vh;
+    }
+    #clothing img{
+        height: 7vh;
+        width: 7vh;    
+    }
+    #clothingMen{
+        position: relative;
+        top: 25%;
+        height: 20%;
+        font-size: 2.1vh;
+        width:80%;
+    }
+
+    #clothingWomen{
+        position: relative;
+        top: 25%;
+        height: 20%;
+        font-size: 2.1vh;
+        width:80%;
+    }
+    .tabDiv ul li {
+        front-size:10vh;
+        list-style-type: none;
+        display: inline-block;
+        background: rgba(51, 82, 107, 0.43);
+        margin: 0;
+        padding: 3px 10px;
+        border-radius: 10px 10px 0 0;
+        color: #fff;
+        font-weight: 200;
+        font-size:2.3vh;
+        cursor: pointer; 
+    }
+    .tabDiv ul {
+        margin: 100;
+        padding: 100;
+        color:black;
+    }
+}
+
+@media (max-width:290px){
+    #clothingContent {
+        width: 80%;
+        height:60%;
+    }
+    #clothingHeader h2{
+        font-size: 3vh;
+    }
+}
+
+

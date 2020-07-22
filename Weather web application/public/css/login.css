@@ -1,0 +1,362 @@
+#LogIn {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 10%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 90%; 
+    overflow: fixed; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+#LogInContent{
+    background-size: cover;
+    background-image: url("../img/backgroud/clo_back.jpg");
+    position: relative;
+    background-color: #fefefe;
+    overflow:hidden;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    position: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+#LogInHeader .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+#LogInHeader .close:hover,.close:focus {
+    color: #9dcaee;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#LogInHeader {
+    position: absolute;
+    top: 0;
+    height: 25%;
+    width: 100%;
+    background-image: url("../img/clothing/bluesky.gif");
+    text-align: center;
+}
+
+#LogInHeader h2{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    color: #e0ffff;
+    text-shadow: 0 0 5px rgba(255,255,255,1);       
+    font-size: 6vh;
+}
+
+#LogInBody {
+    margin-top: 15%;
+    margin-left: 10%;
+    padding-left: 5%;
+    width: 80%;
+    height: 100%;
+}
+
+#inputLines {
+    padding-top: 4%;
+    padding-left: 7%;
+    width: 80%;
+    height: 75%;
+}
+
+.loginform{
+    display: block;
+    margin-top: 0em;
+}
+
+.inputbar{
+    width: 60%;
+    font-size: 2.4vh;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: 1px solid rgb(157, 202, 238);
+    border-radius: 4px;
+}
+.rememberPassword{
+    font-size: 2.4vh;
+}
+.no_message{
+    font-size: 2.4vh;
+}
+#submit_button{
+    background-color: #9ec9ed;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#err_message {
+    position: relative;
+    padding-top: 0px;
+    margin-right: 0px;
+    color: red;
+}
+
+#scds {
+    padding-left: 0px;
+    color:red;
+}
+
+#s_message {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#s_message p {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    color: red;
+}
+
+#submit_button:hover {
+    box-shadow: 1px 1px 2px black, 0 0 5px rgba(255,255,255,1), 0 4px 4px 0 #badefc;
+}
+
+#rn:link {
+    color: blue;
+}
+
+/* visited link */
+#rn:visited {
+    color: purple;
+}
+
+/* mouse over link */
+#rn:hover {
+    text-shadow: 0 0 5px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,1), 0 0 15px #5c788e, 0 0 23px rgba(255,255,255,1);
+    color: #5c788e;
+}
+
+/* selected link */
+#rn:active {
+    color: black;
+}
+@media screen and (max-height:500px){
+    #LogInBody {
+        margin-top: 0%;
+        padding-top:12%;
+        width: 85%;
+        height:60%;
+        overflow: scroll;
+
+
+    }
+}
+
+@media screen and (min-aspect-ratio: 2) and (min-aspect-ratio: 5/16) and (max-aspect-ratio: 13/16) {
+    #LogInBody {
+        margin-top: 30%;
+        margin-left: 5%;
+        padding-left: 0%;
+        width: 100%;
+        height: 100%;
+    }
+    #inputLines{
+         margin-top: 30%;
+
+    }
+    .loginform{
+        margin-top: 10%;
+        margin-left: 5%;
+        line-height: 5.0em;
+    }
+    
+    #inputLines {
+        padding-top: 4%;
+        padding-left: 7%;
+        width: 80%;
+        height: 75%;
+    }
+    .inputbar{
+        font-size: 2.3vh;
+        border: 1px solid rgb(157, 202, 238);
+        border-radius: 11px;
+    }
+    #submit_button {
+        font-size: 50px;
+    }
+    .no_message{
+        font-size:30px;
+    }
+}
+
+@media screen and (min-aspect-ratio: 13/16) and (max-aspect-ratio: 23/16) {
+    #LogInContent{
+        height: 90%;            
+    }
+    #LogInBody {
+        margin-top: 29%;
+        margin-left: 5%;
+        padding-left: 0%;
+        width: 95%;
+        overflow:scroll;
+        position:absolute;
+        height: 100%;
+    }
+    #inputLines{
+        margin-top: 0%;
+
+    }
+    .loginform{
+        margin-top: -5%;
+        margin-left: 5%;
+        line-height: 2.0em;
+    }
+    
+    #inputLines {
+        padding-top: 4%;
+        padding-left: 7%;
+        width: 80%;
+        height: 75%;
+    }
+    .inputbar{
+        font-size: 2.3vh;
+        border: 1px solid rgb(157, 202, 238);
+        border-radius: 8px;
+    }
+    #submit_button {
+        font-size: 20px;
+    }
+    .rememberPassword{
+        font-size: 2.2vh;
+    }
+    .no_message{
+        font-size: 2.2vh;
+    }
+}
+@media (max-aspect-ratio: 13/16) {
+    #LogInContent{
+        height: 90%;
+                
+    }
+    #LogInBody {
+        margin-top: 50%;
+        margin-left: 5%;
+        padding-left: 0%;
+        width: 95%;
+        height: 100%;
+    }
+    #inputLines{
+        margin-top: 0%;
+
+    }
+    .loginform{
+        margin-top: -7%;
+        margin-left: 5%;
+        line-height: 3.0em;
+    }
+    
+    #inputLines {
+        padding-top: 3%;
+        padding-left: 7%;
+        width: 80%;
+        height: 75%;
+    }
+    .inputbar{
+        font-size: 2.6vh;
+        border: 1px solid rgb(157, 202, 238);
+        border-radius: 8px;
+    }
+    .rememberPassword{
+        font-size: 2.2vh;
+    }
+    #remember{
+        width:25px;
+        height:25px;
+    }
+    #submit_button {
+        font-size: 21px;
+    }
+    .no_message{
+        font-size: 2.2vh;
+    }
+}
+@media (max-width: 330px) {
+    #LogInContent{
+        height: 100%;          
+    }
+    #LogInHeader h2{    
+        font-size: 4.9vh;
+    }
+    #LogInBody {
+        margin-top: 85%;
+        margin-left: 5%;
+        padding-left: 0%;
+        width: 95%;
+        height: 100%;
+    }
+    #inputLines{
+        margin-top: 0%;
+
+    }
+    .loginform{
+        margin-top: -7%;
+        margin-left: 5%;
+        line-height: 2.0em;
+    }
+    
+    #inputLines {
+        padding-top: 3%;
+        padding-left: 7%;
+        width: 80%;
+        height: 75%;
+    }
+    .inputbar{
+        font-size: 2.6vh;
+        border: 1px solid rgb(157, 202, 238);
+        border-radius: 8px;
+    }
+    .rememberPassword{
+        font-size: 1.8vh;
+    }
+    #remember{
+        width:23px;
+        height:23px;
+    }
+    #submit_button {
+        font-size: 13px;
+    }
+    .no_message{
+        font-size: 1.8vh;
+    }
+}
