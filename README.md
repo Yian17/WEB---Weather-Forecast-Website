@@ -6,9 +6,6 @@
 - Student 4: Quan Zhou (1002162492)
 
 ## Site:
-This web application has already deploied on heroku server.
-Here is the URL for our site https://bang-weather-search.herokuapp.com
-
 >> Our site is an RESTful api, user can use all CURD methods list in Endpoints.
 
 ## Endpoints:
